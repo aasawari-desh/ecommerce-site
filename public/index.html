@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>TechMart E-Commerce</h1>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="http://localhost:3001">Furniture</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Welcome to Our E-Commerce Platform</h2>
+    <p>Upload bills and subscribe for updates</p>
+</section>
+
+<section class="card">
+
+    <h2>Upload Customer Bill</h2>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="bill" required>
+        <button type="submit">Upload</button>
+    </form>
+
+</section>
+
+<section class="card">
+
+    <h2>Newsletter Signup</h2>
+
+    <form action="/subscribe" method="POST">
+        <input type="email" name="email" placeholder="Enter email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+
+</section>
+
+</body>
+</html>
